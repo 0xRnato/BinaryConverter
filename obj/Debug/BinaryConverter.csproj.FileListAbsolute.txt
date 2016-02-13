@@ -1,0 +1,6 @@
+C:\Users\rnato\OneDrive\Projects\C#\BinaryConverter\bin\Debug\BinaryConverter.exe.config
+C:\Users\rnato\OneDrive\Projects\C#\BinaryConverter\bin\Debug\BinaryConverter.exe
+C:\Users\rnato\OneDrive\Projects\C#\BinaryConverter\bin\Debug\BinaryConverter.pdb
+C:\Users\rnato\OneDrive\Projects\C#\BinaryConverter\obj\Debug\BinaryConverter.csprojResolveAssemblyReference.cache
+C:\Users\rnato\OneDrive\Projects\C#\BinaryConverter\obj\Debug\BinaryConverter.exe
+C:\Users\rnato\OneDrive\Projects\C#\BinaryConverter\obj\Debug\BinaryConverter.pdb
