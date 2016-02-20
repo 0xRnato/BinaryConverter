@@ -8,13 +8,17 @@ namespace BinaryConverter
         {
             ulong bina = 0, casa = 1, resto, quo;
             string binaStr = "", binafinal = "";
-            int multi = 0, multi2 = 0;
+            int multi = 0, nibbleCount = 0;
 
             Console.Write("Enter a decimal number: ");
             quo = ulong.Parse(Console.ReadLine());
+            Console.Write("\n");
 
+            //get binary number
             do
             {
+                //Step by step solving
+                Console.WriteLine(quo + "/2 = " + quo / 2 + " Resta: " + quo % 2);
                 resto = quo % 2;
                 bina += resto * casa;
                 quo /= 2;
@@ -23,7 +27,8 @@ namespace BinaryConverter
 
             binaStr = Convert.ToString(bina);
 
-            while (binaStr.Length >= multi)
+            //formatting result
+            while (binaStr.Length > multi)
             {
                 multi += 4;
             }
@@ -31,25 +36,26 @@ namespace BinaryConverter
             for (int i = 0; i < multi - binaStr.Length; i++)
             {
                 binafinal += "0";
-                multi2 += 1;
-                if (multi2 == 4)
+                nibbleCount += 1;
+                if (nibbleCount == 4)
                 {
                     binafinal += " ";
-                    multi2 = 0;
+                    nibbleCount = 0;
                 }
             }
 
             for (int i = 0; i < binaStr.Length; i++)
             {
                 binafinal += binaStr[i];
-                multi2 += 1;
-                if (multi2 == 4)
+                nibbleCount += 1;
+                if (nibbleCount == 4)
                 {
                     binafinal += " ";
-                    multi2 = 0;
+                    nibbleCount = 0;
                 }
             }
-            Console.WriteLine("Binary FIN: " + binafinal);
+
+            Console.WriteLine("\nBinary: " + binafinal);
             Console.ReadLine();
         }
     }
